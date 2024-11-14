@@ -1,8 +1,8 @@
 @charset "UTF-8";
 body {
   background:
-          radial-gradient(ellipse at top left, #6a1921, transparent 70%),
-          radial-gradient(ellipse at right 34% bottom 5%, #40b2c2, #000000 80%, #000000) left;
+          radial-gradient(ellipse at top left, #340d10, transparent 70%),
+          radial-gradient(ellipse at right 34% bottom 5%, #0e2428, #000000 80%, #000000) left;
   height: 100vh;
   margin: 0;
   overflow: hidden;

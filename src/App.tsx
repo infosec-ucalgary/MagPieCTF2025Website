@@ -77,7 +77,7 @@ function App() {
         <div className="wrapper">
             <pre className="text-7xl">
                 <div ref={textRef}></div>
-                {showLogo && <img src={logo} className="logo" alt="logo" />}
+                {showLogo && <div className="glitch"><img src={logo} className="logo" alt="logo" /></div>}
                 {showCountdown && <div ref={countdownRef} className="text-5xl mt-2 hidden">{countdown}</div>}
             </pre>
         </div>
