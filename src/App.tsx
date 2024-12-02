@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import GlitchedWriter, { presets } from 'glitched-writer';
 import './App.css';
 import './index.css';
-import logo from './assets/logo.webp';
+import logo from './assets/logo.png';
 
 function App() {
     const textRef = useRef<HTMLDivElement>(null);
@@ -14,7 +14,7 @@ function App() {
 
     useEffect(() => {
         if (textRef.current) {
-            const writer = new GlitchedWriter(textRef.current, presets.encrypted);
+            const writer = new GlitchedWriter(textRef.current, presets.neo);
             const phrases = ["SOMETHING IS HAPPENING SOON"];
             writer.queueWrite(phrases, 1000, () => {
                 setTimeout(() => setShowLogo(true), 500);
@@ -30,7 +30,7 @@ function App() {
 
     useEffect(() => {
         if (showCountdown && countdownRef.current) {
-            const countdownWriter = new GlitchedWriter(countdownRef.current, presets.encrypted);
+            const countdownWriter = new GlitchedWriter(countdownRef.current, presets.neo);
 
             const updateCountdown = () => {
                 const targetDate = new Date("2025-02-22T23:59:59").getTime();

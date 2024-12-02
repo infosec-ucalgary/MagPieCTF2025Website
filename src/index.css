@@ -54,7 +54,7 @@ body::before {
     opacity: 1;
   }
   50% {
-    opacity: 0.8; /* Reduce the blink intensity */
+    opacity: 0.9;
   }
 }
 
@@ -63,7 +63,7 @@ body::before {
     opacity: 1;
   }
   50% {
-    opacity: 0.8; /* Reduce the blink intensity */
+    opacity: 0.8;
   }
 }
 
@@ -72,7 +72,7 @@ body::before {
     opacity: 1;
   }
   50% {
-    opacity: 0.8; /* Reduce the blink intensity */
+    opacity: 0.5;
   }
 }
 
@@ -81,10 +81,9 @@ body::before {
     opacity: 1;
   }
   50% {
-    opacity: 0.8; /* Reduce the blink intensity */
+    opacity: 0.5;
   }
 }
-
 
 
 .wrapper {
@@ -104,8 +103,6 @@ pre {
   -webkit-animation: text-blink 0.01s steps(2) infinite;
   animation: text-blink 0.01s steps(2) infinite;
 }
-
-
 
   .image-container {
     text-align: center;
