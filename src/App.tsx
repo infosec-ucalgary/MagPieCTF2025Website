@@ -3,6 +3,8 @@ import GlitchedWriter, { presets } from 'glitched-writer';
 import './App.css';
 import './index.css';
 import logo from './assets/logo.png';
+import Navbar from './Nav';
+import './Nav.css';
 
 function App() {
     const textRef = useRef<HTMLDivElement>(null);
@@ -12,6 +14,12 @@ function App() {
     const [countdown, setCountdown] = useState('');
     const [initialWriteDone, setInitialWriteDone] = useState(false);
 
+
+    const links = [
+          { to: '/', label: 'Home' }, 
+          { to: 'https://cybersec-ucalgary.club', label: 'About' },
+          { to: 'https://2025.magpiectf.ca', label: 'Sign Up' }
+    ];
     useEffect(() => {
         if (textRef.current) {
             const writer = new GlitchedWriter(textRef.current, presets.neo);
@@ -75,12 +83,15 @@ function App() {
 
     return (
         <div className="wrapper">
+	    <div className="nav">
+	    	<Navbar title="MagpieCTF2025" links={links} />
+	    </div>
             <pre className="text-7xl">
                 <div ref={textRef}></div>
                 {showLogo && <div className="glitch"><img src={logo} className="logo" alt="logo" /></div>}
                 {showCountdown && <div ref={countdownRef} className="text-5xl mt-2 hidden">{countdown}</div>}
             </pre>
-        </div>
+	</div>
     );
 }
 
