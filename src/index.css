@@ -5,7 +5,7 @@ body {
           radial-gradient(ellipse at right 34% bottom 5%, #0e2428, #000000 80%, #000000) left;
   height: 100vh;
   margin: 0;
-  overflow: hidden;
+  overflow: scroll;
   color: #f5f4f6;
   font: 1.3rem Inconsolata, monospace;
   text-shadow: 0 0 5px #f5f4f6;
@@ -87,15 +87,14 @@ body::before {
 
 
 .wrapper {
-  padding: 10vh;
   height: 100%;
   width: 100%;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  overflow: scroll;
 }
+/*
 .wrapper::-webkit-scrollbar {
   display: none;
-}
+}*/
 
 pre {
   white-space: pre-wrap;
