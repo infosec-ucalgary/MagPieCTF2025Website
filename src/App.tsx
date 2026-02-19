@@ -79,18 +79,18 @@ function App() {
                 <div className="flex-1 md:mb-0 mb-6">
                     <p className="text-3xl pb-3 underline">In-person</p>
                     <ol className='space-y-2'>
-                        <li>First Place: $400</li>
-                        <li>Second Place: $200</li>
-                        <li>Third Place: $100</li>
+                        <li>First Place: $275</li>
+                        <li>Second Place: $150</li>
+                        <li>Third Place: $75</li>
                     </ol>
                 </div>
 
                 <div className="flex-1">
                     <p className="text-3xl pb-3 underline">Online</p>
                     <ol className='space-y-2'>
-                        <li>First Place: $150</li>
-                        <li>Second Place: $100</li>
-                        <li>Third Place: $50</li>
+                        <li>First Place: $275</li>
+                        <li>Second Place: $150</li>
+                        <li>Third Place: $75</li>
                     </ol>
                 </div>
             </div>
